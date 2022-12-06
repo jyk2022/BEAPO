@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import styled from "styled-components";
 
 function TodoList() {
@@ -20,14 +20,14 @@ function TodoList() {
       <div>
         <span>
           <p>
-            <strong>번호: </strong>
+            <strong>번호:</strong>
             {todoslistss.id}
           </p>
         </span>
       </div>
       <div>
         <span>
-          <strong>제목: </strong>
+          <strong>제목:</strong>
         </span>
         <h3>{todoslistss.title}</h3>
         <br></br>
